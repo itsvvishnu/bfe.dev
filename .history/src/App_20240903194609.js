@@ -10,8 +10,7 @@ function App() {
     console.log("callback2");
   }
   const [callback, setCallback] = useState(callback1);
-  const [delay, setDelay] = useState(4000);
-  useTimeout(callback, delay);
+  const [delay, setDelay] = useState(1000);
   setTimeout(() =>{
     console.log("delay changed")
     setDelay(2000)
@@ -20,6 +19,7 @@ function App() {
     console.log("callback changed")
     setCallback(callback2)
   }, 300);
+  useTimeout(callback, delay);
   return (
     <div className="App">
       
