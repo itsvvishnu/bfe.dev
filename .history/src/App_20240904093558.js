@@ -5,7 +5,7 @@ import { useArray } from './hooks/useArray';
 
 function App() {
   const { value,push, removeByIndex } = useArray([1, 2, 3]);
-  useEffect(() => {
+  useCallback(() => {
     console.log("useEffect ran")
     removeByIndex(1)
   }, [])

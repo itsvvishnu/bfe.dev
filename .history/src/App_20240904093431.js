@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import useTimeout from './hooks/useTimeout';
 import { useArray } from './hooks/useArray';

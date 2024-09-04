@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import useTimeout from './hooks/useTimeout';
 import { useArray } from './hooks/useArray';
@@ -6,7 +6,7 @@ import { useArray } from './hooks/useArray';
 function App() {
   const { value,push, removeByIndex } = useArray([1, 2, 3]);
   useEffect(() => {
-    console.log("useEffect ran")
+    push(2);
     removeByIndex(1)
   }, [])
   return ( <div>
