@@ -5,10 +5,10 @@ import { useArray } from './hooks/useArray';
 import { useIsFirstRender } from './hooks/useIsFirstRender';
 
 function App() {
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
+  useIsFirstRender();
+  useIsFirstRender();
+  useIsFirstRender();
+  useIsFirstRender();
   return ( <div>
       </div>
   );

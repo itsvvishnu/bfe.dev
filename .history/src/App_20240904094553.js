@@ -5,11 +5,17 @@ import { useArray } from './hooks/useArray';
 import { useIsFirstRender } from './hooks/useIsFirstRender';
 
 function App() {
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
-  console.log(useIsFirstRender());
+  const { value,push, removeByIndex } = useArray([1, 2, 3]);
+  useEffect(() => {
+    console.log("useEffect ran")
+    removeByIndex(1)
+  }, [])
+  useIsFirstRender();
+  useIsFirstRender();
+  useIsFirstRender();
+  useIsFirstRender();
   return ( <div>
+        {value}
       </div>
   );
 }
